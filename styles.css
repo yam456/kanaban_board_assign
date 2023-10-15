@@ -1,0 +1,124 @@
+html{
+    font-family: "Nunito";
+}
+
+body{
+    background-color: greenyellow;
+    color: #ffffff;
+}
+
+.container{
+    max-width: 800px;
+}
+
+.form-group{
+    margin: 16px;
+}
+.form-group input{
+    padding: 10px;
+    background-color: white;
+    font-size: 18px;
+    border: none;
+    color: black;
+    border-radius: 4px;
+}
+.form-group input:focus{
+    background-color: white;
+}
+.form-group button{
+    padding: 10px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.form-group button:hover{
+    background-color: #1ffd48cc;
+}
+.form-group h1{
+    color: black;
+}
+
+
+.boards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+ 
+.boards .board{
+    background-color: #26232c;
+    border: 1px solid rgba(253, 149, 31, 0.067);
+    border-radius: 4px;
+    margin: 0 16px;
+}
+
+.boards .board h3{
+    padding: 16px;
+    margin: 0;
+    color: #1ffd48cc;
+}
+
+.board .dropzone{
+    padding: 16px;
+    min-width: 282px;
+    min-height: 200px;
+}
+
+.dropzone .card{
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px #1ffd48cc;
+    width: 250px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #1A1A1C;
+}
+
+.dropzone .status{
+    width: 30px;
+    height: 8px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+#todo .status{
+    background-color: #23d26f;
+}
+#inprogress .status{
+    background-color: #b4ff33;
+}
+#done .status{
+    background-color: red;
+}
+
+.card, .dropzone{
+    transition: .4s;
+}
+
+/* CLASSES */
+.highlight{
+    background-color: rgba(253, 149, 31, 0.031);
+}
+.is-dragging{
+    cursor: move;
+    opacity: 0.3;
+}
+.over{
+    background-color: rgba(76, 209, 55, 0.067);
+}
+
+@media screen and (max-width: 1050px){
+    .boards{
+        flex-direction: column;
+    }
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
